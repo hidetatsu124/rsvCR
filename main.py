@@ -19,6 +19,9 @@ class Room(BaseModel):
     room_name: str = Field(max_length=12)
     capacity: int
 
+@app.get("/")
+async def index():
+    return {"message": "Success"}
 
 @app.get("/")
 async def index():
