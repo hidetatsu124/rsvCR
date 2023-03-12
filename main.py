@@ -23,10 +23,6 @@ class Room(BaseModel):
 async def index():
     return {"message": "Success"}
 
-@app.get("/")
-async def index():
-    return {"message": "Success"}
-
 @app.post("/users")
 async def users(users: User):
     return {"users": users}
