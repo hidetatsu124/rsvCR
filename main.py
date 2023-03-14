@@ -1,6 +1,8 @@
 import datetime
 from fastapi import FastAPI
-from pydantic import BaseModel, baseModel, Field
+from pydantic import BaseModel, Field
+
+app = FastAPI()
 
 class Booking(BaseModel):
     booking_id: int
